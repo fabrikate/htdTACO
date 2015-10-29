@@ -13,5 +13,6 @@ $(document).ready(function() {
   'http://0.media.collegehumor.cvcdn.com/43/84/ef86568697a08a91462512bdbb8b8889-taco11.gif',
   'https://cdn2.vox-cdn.com/fan_shot_images/326935/tacos.gif',
   'https://cdn2.vox-cdn.com/fan_shot_images/326875/taco-recall.gif'
-  ]
+  ];
+
 })
