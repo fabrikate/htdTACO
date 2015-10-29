@@ -1065,6 +1065,7 @@ $(document).ready(function() {
   // generate a joke
   $('button').on('click', function(e) {
     e.preventDefault();
+    console.log('test');
     $('#joke').text(makeTacoJoke());
   })
   // tweet the joke
