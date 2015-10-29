@@ -1077,11 +1077,13 @@ $(document).ready(function() {
     return splitString.join(' ');
     }
   }
-
+  // generate a joke
   $('button').on('click', function(e) {
     e.preventDefault();
     $('#joke').text(makeTacoJoke());
   })
-  $('.twitter-mention-button').attr('href', '"https://twitter.com/intent/tweet?screen_name=hack_the_dot&text=' + makeTacoJoke())
-  console.log(makeTacoJoke());
+  // tweet the joke
+  var twitterHandle = $('#tweetTo').val() || 'hack_the_dot';
+  console.log(twitterHandle);
+  $('.twitter-mention-button').attr('href', '"https://twitter.com/intent/tweet?screen_name='+ twitterHandle + '&text=' + makeTacoJoke())
 });
