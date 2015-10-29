@@ -1,26 +1,83 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <title>Yo' Taco Jokes</title>
-  </head>
-  <body class="container-fluid">
-    <section class="col-xs-10 col-xs-offset-1" id="greeting">
-      <h1>Welcome to Yo'Taco Jokes</h1>
-      <h2>Your go-to site for Yo momma style jokes...about tacos!</h2>
-    </section>
-    <section class="col-xs-10 col-xs-offset-1" id="jokes">
-      <h3>And your joke is...</h3>
-      <h3 id="joke"></h3>
-      <button class="btn btn-primary">Generate Joke</button>
-      <span> what's up my man. let's joke about tacos. let's taco bout it taco bout it taco bout it baaaabyyyyy.</span>
-      <a href="https://twitter.com/intent/tweet?screen_name=hack_the_dot&text=***PUT TEXT HERE***" class="twitter-mention-button">Tweet to @hack_the_dot</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </section>
-  </body>
-</html>
+<style>
+	body{
+		background:
+			url(http://i.imgur.com/YRXz0Tm.gif) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	#background {
+		/* opacity */
+	    opacity:0.7;
+	    background-color:#000;
+	    position:fixed;
+	    width:100%;
+	    height:100%;
+	    top:0px;
+	    left:0px;
+	}
+
+	#tacotime {
+		display: table;
+		position:relative;
+		height: 100%;
+	    top:0px;
+	    left:0px;
+	    text-align: center;
+	    margin: auto;
+	    width: 60%;
+	}
+
+	span {
+	  display: table-cell;
+	  position: relative;
+	  vertical-align: middle;
+	  color: #fff;
+	  font-family: arial;
+	  font-size: 40px;
+	  z-index: 100;
+	}
+
+	button {
+	    display: inline-block;
+	    padding: 6px 12px;
+	    margin-bottom: 0;
+	    font-size: 14px;
+	    font-weight: 400;
+	    line-height: 1.42857143;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    -ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	    cursor: pointer;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    border-radius: 4px;
+
+	    color: #fff;
+	    background-color: #5cb85c;
+	    border-color: #4cae4c;
+
+	    font-size: 25px;
+}
+
+</style>
+<body>
+
+<div id='background'>
+</div>
+
+<div id='tacotime'>
+		<span> what's up my man. let's joke about tacos. let's taco bout it taco bout it taco bout it baaaabyyyyy.
+		<br><br>
+		<button type="button">Generate New</button> </span>
+</div>
+
+</body>
