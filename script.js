@@ -1042,7 +1042,6 @@ var jokes = [ 'Yo mama is so fat that her bellybutton gets home 15 minutes befor
   '' ]
 function makeTacoJoke() {
   var joke = jokes[Math.floor((Math.random() * (jokes.length - 1)))];
-  console.log(joke);
   for (var i = 0; i < joke.length; i++) {
     var string = joke;
     var splitString = string.split(" ");
